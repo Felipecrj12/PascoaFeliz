@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.container-principal {
+  background-image: url("./background-coelho.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 70vh;
+  min-height: 400px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+ul li {
+  margin-bottom: 250px;
+}
+ul li a {
+  text-decoration: none;
+  color: #1f2020;
+  font-size: 16px;
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  transition: 0.7s ease;
+}
+ul li:hover {
+  background: rgba(245, 242, 237, 0.2666666667);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 50px;
+  padding: 100px;
+  margin-bottom: 50px;
+  color: white;
+  text-align: center;
+}
+
+body {
+  background-color: #f8f0b4;
+}
+body h2 {
+  font-size: 30px;
+  color: #1f2020;
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 50px;
+  font-family: "Winky Sans", sans-serif;
+}
+body p {
+  font-size: 20px;
+  color: #1f2020;
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 50px;
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.significado-pascoa {
+  background-image: url("./SIGNIFICADO.webp");
+  width: 300px;
+  height: 230px;
+  border-radius: 20%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+  margin: 57px 180px;
+}
+.significado-pascoa .text {
+  display: flex;
+  justify-content: space-between;
+  margin: 217px -103px;
+  font-size: 14px;
+}
+
+.significado-coelho {
+  background-image: url("./assets_task_01js8sqdraf93vpkzpzp5ejrqv_img_0.webp");
+  width: 191px;
+  height: 223px;
+  border-radius: 20%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+  margin: 72px 930px;
+}
+.significado-coelho .text-two {
+  display: flex;
+  justify-content: space-between;
+  margin: 217px -103px;
+  font-size: 14px;
+}
+
+.troca-de-presentes {
+  background-image: url("./26012024161302_20210225_09404922028129-4138e1cd029cf4b87017062966780508-480-0.jpg");
+  width: 191px;
+  height: 223px;
+  border-radius: 20%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 1;
+  margin: 75px 1530px;
+}
+.troca-de-presentes .text-three {
+  display: flex;
+  justify-content: space-between;
+  margin: 217px -103px;
+  font-size: 14px;
+}
+
+.container-tradicoes {
+  padding: 500px;
+}
+.container-tradicoes .tradicoes {
+  display: flex;
+  justify-content: center;
+  margin: 217px -53px;
+  font-size: 14px;
+  color: #feffff;
+  text-align: center;
+  padding: 40px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 50px;
+  background: #b87f4b;
+  border-radius: 20%;
+}
+
+.criancas-coelho {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #050505;
+}
+
+.legenda {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #050505;
+  text-align: center;
+  padding: 20px;
+}
+
+.foto {
+  display: flex;
+  justify-content: center;
+  margin: 217px -53px;
+  font-size: 14px;
+  color: #feffff;
+  text-align: center;
+  padding: 40px;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 50px;
+  background: rgba(184, 128, 75, 0.337254902);
+  border-radius: 20%;
+}
+
+@media (max-width: 768px) {
+  ul {
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+  }
+  .significado-pascoa,
+  .significado-coelho,
+  .troca-de-presentes {
+    position: static;
+    margin: 20px auto;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .significado-pascoa .text, .significado-pascoa .text-two, .significado-pascoa .text-three,
+  .significado-coelho .text,
+  .significado-coelho .text-two,
+  .significado-coelho .text-three,
+  .troca-de-presentes .text,
+  .troca-de-presentes .text-two,
+  .troca-de-presentes .text-three {
+    margin: 20px 0;
+    font-size: 16px;
+    text-align: center;
+  }
+  .container-tradicoes {
+    padding: 40px;
+  }
+  .foto {
+    margin: 20px auto;
+    padding: 20px;
+    flex-direction: column;
+  }
+}
+footer {
+  background-color: #f8f0b4;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=styles.css.map */
